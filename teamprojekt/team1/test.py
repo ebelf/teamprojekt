@@ -15,5 +15,5 @@ class MyClass(object):
         Constructor
         '''
         3+4+5+6
-        
+        4+5+6
         
