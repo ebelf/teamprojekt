@@ -23,7 +23,7 @@ DSt = [DSt1, DSt2, DSt3, DSt4, DSt5]
 
 #Seminarliste
 
-Sem = [True, True, True]
+Sem = [2,1,1 ]
 Res = [set() for i in range(len(Sem))]
 
 matchStud = [False for i in range(len(PSt))]
@@ -50,28 +50,31 @@ def matching():
                     matchStud[i] = True
                 else:                
                     maxp = max(PSt[i])[1]         # [3, 1] --> 1
-                    if Sem[maxp-1]:
+                    if Sem[maxp-1]>0:
                         print(i)
-                        Res[maxp-1] = i
-                        Sem[maxp-1] = False
+                        Res[maxp-1].add(i)
+                        Sem[maxp-1] -= 1
                         matchStud[i] = True
                         PSt[i].remove(max(PSt[i]))
                     else:
-                        print('else')
-                        if 'PA' in DSt[i] and 'PA' not in DSt[Res[maxp-1]]:
-                            matchStud[Res[maxp-1]] = False
-                            Res[maxp-1] = i
-                            matchStud[i] = True
-                            PSt[i].remove(max(PSt[i]))
-                        if 'PA' not in DSt[i] and 'PA' in DSt[Res[maxp-1]]:
-                            PSt[i].remove(max(PSt[i]))
-                        else:
-                            if DSt[i][0]<DSt[Res[maxp-1]][0]:
-                                matchStud[Res[maxp-1]] = False
-                                Res[maxp-1] = i
+                        for z in Res[maxp-1]:                            
+                            print('else')
+                            if 'PA' in DSt[i] and 'PA' not in DSt[z]:
+                                matchStud[z] = False
+                                Res[maxp-1].remove(z)
+                                Res[maxp-1].add(i)
                                 matchStud[i] = True
-                                PSt[i].remove(max(PSt[i]))
-                            if DSt[i][0]>DSt[Res[maxp-1]][0]:
-                                PSt[i].remove(max(PSt[i]))
-                
+                                break                                      
+                            if 'PA' not in DSt[i] and 'PA' in DSt[z]:
+                                pass
+                            else:
+                                if DSt[i][0]<DSt[z][0]:
+                                    matchStud[z] = False
+                                    Res[maxp-1].remove(z)
+                                    Res[maxp-1].add(i)
+                                    matchStud[i] = True
+                                    break
+                        if matchStud[i]==False:
+                            PSt[i].remove(max(PSt[i]))
+                    
                     
