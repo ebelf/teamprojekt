@@ -1,0 +1,22 @@
+<xml>
+	<Student>
+	   <year>2003</year>
+	   <Seminar id='1'>1</Seminar>
+	   <Seminar id='2'>2</Seminar>
+	   <month>1</month>
+	   <day>1</day>
+	   <hour>1</hour>
+	   <minute>1</minute>
+	   <second>1</second>
+	</Student>
+	<Student>
+	   <year>2003</year>
+	   <Seminar id='1'>1</Seminar>
+	   <Seminar id='2'>2</Seminar>
+	   <month>1</month>
+	   <day>1</day>
+	   <hour>1</hour>
+	   <minute>1</minute>
+	   <second>1</second>
+	</Student>
+</xml>
