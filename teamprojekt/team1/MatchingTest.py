@@ -5,7 +5,7 @@ Created on 14.02.2016
 '''
 import unittest
 import datetime
-import MatchingAlgTry as candidate
+import MatchingAlgFu as candidate
 
 
 class Test(unittest.TestCase):
@@ -46,7 +46,7 @@ class Test(unittest.TestCase):
         
         matchStud = [False for i in range(len(PSt))]
 
-        r = candidate.matching()
+        r = candidate.matching(PSt, DSt, Sem)
         self.assertEqual(r, [{0,1},{6,8},{2,4,7,9}])
 
 if __name__ == "__main__":
