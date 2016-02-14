@@ -28,25 +28,25 @@ Res = [set() for i in range(len(Sem))]
 
 matchStud = [False for i in range(len(PSt))]
 
-def emptylist():
-    count=0
-    for i in PSt:
-        if i==set():
-            count +=1
-    if count==len(PSt):
-        return True
+# def emptylist():
+#     count=0
+#     for i in PSt:
+#         if i==set():
+#             count +=1
+#     if count==len(PSt):
+#         return True
 
 
 def matching():
     while  False in matchStud:
-        print('while')
+        #print('while')
         for i in range(0, len(matchStud)):
-            print('for')
+            #print('for')
             if matchStud[i] == True:
                 pass
             else:
                 if not PSt[i]:
-                    print('leer')
+                    #print('leer')
                     matchStud[i] = True
                 else:                
                     maxp = max(PSt[i])[1]         # [3, 1] --> 1
@@ -58,7 +58,7 @@ def matching():
                         PSt[i].remove(max(PSt[i]))
                     else:
                         for z in Res[maxp-1]:                            
-                            print('else')
+                            #print('else')
                             if 'PA' in DSt[i] and 'PA' not in DSt[z]:
                                 matchStud[z] = False
                                 Res[maxp-1].remove(z)
@@ -76,5 +76,4 @@ def matching():
                                     break
                         if matchStud[i]==False:
                             PSt[i].remove(max(PSt[i]))
-                    
-                    
+    return Res
