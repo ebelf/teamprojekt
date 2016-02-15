@@ -41,13 +41,12 @@ def matching(PSt, DSt, Sem):
                         Res[maxp-1].add(i)
                         Sem[maxp-1] -= 1
                         matchStud[i] = True
-                        PSt[i].remove(max(PSt[i]))
                     else:
                         for z in Res[maxp-1]:                            
                             if 'PA' in DSt[i] and 'PA' not in DSt[z]:
                                 matchStud[z] = False
                                 Res[maxp-1].remove(z)
-                                Res[maxp-1].add(i)
+                                Res[maxp-1].add(i)                            
                                 matchStud[i] = True
                                 break                                      
                             if 'PA' not in DSt[i] and 'PA' in DSt[z]:
