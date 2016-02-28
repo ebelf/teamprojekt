@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<Studierende>
+	<Student id="0">
+		<Matrikelnr>922011</Matrikelnr>
+		<Nachname>Webel</Nachname>
+		<Vorname>Martin</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">1</Seminar>
+		<Seminar id="2">3</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-02-18 13:23:51</Anmeldezeitpunkt>
+	</Student>
+	<Student id="1">
+		<Matrikelnr>922021</Matrikelnr>
+		<Nachname>Meier</Nachname>
+		<Vorname>Matthias</Vorname>
+		<Pflichtanmeldung>NA</Pflichtanmeldung>
+		<Seminar id="1">3</Seminar>
+		<Seminar id="2">1</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-02-19 07:21:37</Anmeldezeitpunkt>
+	</Student>
+	<Student id="2">
+		<Matrikelnr>922031</Matrikelnr>
+		<Nachname>Meier</Nachname>
+		<Vorname>Anna</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">1</Seminar>
+		<Seminar id="2">3</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-03-06 08:42:31</Anmeldezeitpunkt>
+	</Student>
+	<Student id="3">
+		<Matrikelnr>922041</Matrikelnr>
+		<Nachname>Schulz</Nachname>
+		<Vorname>Martin</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">1</Seminar>
+		<Seminar id="2">3</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-03-04 13:24:07</Anmeldezeitpunkt>
+	</Student>
+	<Student id="4">
+		<Matrikelnr>922051</Matrikelnr>
+		<Nachname>Müller</Nachname>
+		<Vorname>Stefan</Vorname>
+		<Pflichtanmeldung>NA</Pflichtanmeldung>
+		<Seminar id="1">1</Seminar>
+		<Seminar id="2">3</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-02-26 10:13:42</Anmeldezeitpunkt>
+	</Student>
+	<Student id="5">
+		<Matrikelnr>922061</Matrikelnr>
+		<Nachname>Fischer</Nachname>
+		<Vorname>Rico</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">3</Seminar>
+		<Seminar id="2">2</Seminar>
+		<Seminar id="3">1</Seminar>
+		<Anmeldezeitpunkt>2015-03-08 12:13:53</Anmeldezeitpunkt>
+	</Student>
+	<Student id="6">
+		<Matrikelnr>922071</Matrikelnr>
+		<Nachname>Fischer</Nachname>
+		<Vorname>Anna</Vorname>
+		<Pflichtanmeldung>NA</Pflichtanmeldung>
+		<Seminar id="1">3</Seminar>
+		<Seminar id="2">1</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-03-18 12:45:14</Anmeldezeitpunkt>
+	</Student>
+	<Student id="7">
+		<Matrikelnr>922081</Matrikelnr>
+		<Nachname>Schneider</Nachname>
+		<Vorname>Anna</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">1</Seminar>
+		<Seminar id="2">3</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-02-27 18:47:40</Anmeldezeitpunkt>
+	</Student>
+	<Student id="8">
+		<Matrikelnr>922091</Matrikelnr>
+		<Nachname>Meier</Nachname>
+		<Vorname>Luca</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">2</Seminar>
+		<Seminar id="2">1</Seminar>
+		<Seminar id="3">3</Seminar>
+		<Anmeldezeitpunkt>2015-02-05 08:33:50</Anmeldezeitpunkt>
+	</Student>
+	<Student id="9">
+		<Matrikelnr>922101</Matrikelnr>
+		<Nachname>Webel</Nachname>
+		<Vorname>Stefan</Vorname>
+		<Pflichtanmeldung>PA</Pflichtanmeldung>
+		<Seminar id="1">3</Seminar>
+		<Seminar id="2">1</Seminar>
+		<Seminar id="3">2</Seminar>
+		<Anmeldezeitpunkt>2015-02-04 12:31:54</Anmeldezeitpunkt>
+	</Student>
+</Studierende>
