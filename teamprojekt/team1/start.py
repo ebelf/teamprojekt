@@ -7,7 +7,7 @@ print(PSt)
 print(DSt)
 
 #Seminarliste mit Anzahl der Plaetze
-Sem = [4,2,2]
+Sem = [5,2,2]
 print(Sem)
 
 # Alg. ausfuehren
