@@ -21,12 +21,11 @@ DSt5 = [datetime.datetime(2015, 3, 6, 10, 59, 20),'PA']
 DSt = [DSt1, DSt2, DSt3, DSt4, DSt5]    #Liste mit Input-Daten
 
 #Seminarliste mit Anzahl der Plaetze
-Sem = [1,1,1]
+Sem = [2,2,1]
 
 
 
 def matching(PSt, DSt, Sem):
-    print('ausgefuehrt')
     Res = [set() for i in range(len(Sem))]
     matchStud = [False for i in range(len(PSt))]
     while  False in matchStud:
@@ -54,13 +53,12 @@ def matching(PSt, DSt, Sem):
                                 pass
                             else:
                                 if  max(PSt[i])[0] > max(PSt[z])[0]:
-                                    print('Praef')
                                     matchStud[z] = False
                                     Res[maxp-1].remove(z)
                                     Res[maxp-1].add(i)                            
                                     matchStud[i] = True
                                     break    
-                                else:
+                                elif max(PSt[i])[0] == max(PSt[z])[0]:      # Timestamp nur pruefen wenn Prioritaeten fuer das Seminar gleich sind
                                     if DSt[i][0]<DSt[z][0]:
                                         matchStud[z] = False
                                         Res[maxp-1].remove(z)
@@ -71,4 +69,4 @@ def matching(PSt, DSt, Sem):
                             PSt[i].remove(max(PSt[i]))
     return Res
 f = matching(PSt, DSt, Sem)
-#print(f)
+print(f)
