@@ -2,7 +2,7 @@
 # from start import f    # todo: später soll das Erg. automatisch umgewandelt werden
 
 #===============================================================================
-# Datei zum Umwanderln des Matching-Ergebnisses in XML-Output-Daten
+# Datei zum Umwandeln des Matching-Ergebnisses in XML-Output-Daten
 #===============================================================================
 
 erg = [{0, 9, 5, 6}, {2, 3}, {1, 4}]    # als Bsp.

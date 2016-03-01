@@ -71,4 +71,4 @@ def matching(PSt, DSt, Sem):
                             PSt[i].remove(max(PSt[i]))
     return Res
 f = matching(PSt, DSt, Sem)
-print(f)
+#print(f)
